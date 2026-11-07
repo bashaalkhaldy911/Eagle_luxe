@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+body{margin:0;font-family:'Cairo','Segoe UI',Tahoma,sans-serif;font-size:16px;color:#ece6d6;direction:rtl;text-align:right;line-height:1.7;background:radial-gradient(circle at 20% 0%,#2b2210 0%,#0c0b09 55%) fixed;animation:fadeIn .8s ease}
+body.leaving{opacity:0;transition:opacity .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(201,162,75,.3)}50%{text-shadow:0 0 22px rgba(240,215,140,.8)}}
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+a{color:#f0d78c;text-decoration:none}
+#header{display:flex;justify-content:space-between;align-items:center;padding:14px 4%;background:rgba(12,11,9,.92);border-bottom:1px solid #c9a24b;position:sticky;top:0;z-index:50}
+.brand{display:flex;flex-direction:column}
+.logo{display:block;font-size:28px;font-weight:700;letter-spacing:1px;direction:ltr;background:linear-gradient(90deg,#c9a24b,#f6e3a1,#c9a24b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.slogan{display:block;font-size:12px;color:#a8996f}
+#nav{display:flex;align-items:center;white-space:nowrap}
+#nav a{position:relative;margin-left:18px;margin-right:0;font-weight:600;color:#ece6d6;transition:color .3s;padding:4px 2px}
+#nav a:after{content:"";position:absolute;right:0;bottom:-4px;width:0;height:2px;background:#c9a24b;transition:width .35s}
+#nav a:hover,#nav a.cur{color:#f0d78c}
+#nav a:hover:after,#nav a.cur:after{width:100%}
+.hero{text-align:center;padding:70px 5% 60px;background:linear-gradient(180deg,rgba(201,162,75,.12),transparent)}
+.hero h1{font-size:40px;margin:0 0 10px;color:#f0d78c;animation:glow 3s infinite}
+.hero p{color:#cfc4a6;font-size:18px;margin:0 0 24px}
+.container{width:88%;max-width:1100px;margin:30px auto;padding-bottom:90px}
+.card{background:linear-gradient(145deg,#1a160e,#110f0a);border:1px solid rgba(201,162,75,.35);border-radius:12px;padding:24px;margin-bottom:26px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+h2{color:#f0d78c;font-size:23px;margin:0 0 16px;border-right:4px solid #c9a24b;padding-right:12px}
+
+/* أنيميشن الأزرار بالتدرج بين الذهبي والخمري الملكي المدرج بفاخرة وحرية */
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1405;
+  padding: 12px 32px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c9a24b, #f6e3a1);
+  transition: transform .3s ease, box-shadow .3s ease, color .3s ease;
+  z-index: 1;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, #c9a24b, #800020, #f6e3a1, #5c0617);
+  background-size: 300%;
+  border-radius: 32px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.btn:hover::before {
+  opacity: 1;
+  animation: borderGlow 4s linear infinite;
+}
+.btn:hover {
+  color: #fff6d6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 22px rgba(128,0,32,0.45), 0 0 15px rgba(201,162,75,0.4);
+}
+
+.floating-container{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);z-index:90;background:rgba(18,15,10,0.92);padding:12px 30px;border-radius:40px;border:1px solid #c9a24b;box-shadow:0 10px 35px rgba(0,0,0,0.85);backdrop-filter:blur(10px);display:flex;align-items:center;gap:18px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid rgba(201,162,75,.2)}
+th{background:#241d0e;color:#f0d78c}
+tr.car{transition:background .3s}
+tr.car:hover{background:rgba(201,162,75,.08)}
+.thumb{width:90px;height:50px;object-fit:cover;border-radius:6px;border:1px solid #c9a24b;vertical-align:middle;background:#050505}
+input[type=checkbox]{width:19px;height:19px;accent-color:#c9a24b;cursor:pointer}
+.drow{display:none;background:#090806}
+.dbox{padding:20px;background:linear-gradient(135deg,#16120b,#0c0a07);border:1px solid rgba(201,162,75,.4);border-radius:10px;margin:12px 0}
+.dbox img{float:right;margin-left:24px;width:220px;height:130px;object-fit:cover;border-radius:8px;border:1px solid #c9a24b;box-shadow:0 0 20px rgba(0,0,0,.8);background:#050505}
+.dbox ul{list-style:none;margin:0;padding:0;overflow:hidden}
+.dbox li{padding:6px 0;border-bottom:1px dashed rgba(201,162,75,.15)}
+.msg{color:#ff9d8a;margin-right:14px}
+#bookingSec{display:none}
+fieldset{border:1px solid #c9a24b;border-radius:10px;padding:18px;margin:0}
+legend{color:#f0d78c;font-weight:700;padding:0 10px}
+label{display:block;margin-bottom:4px;color:#cfc4a6}
+input.txt{width:100%;box-sizing:border-box;padding:10px 12px;font-family:inherit;font-size:15px;color:#ece6d6;background:#0c0b09;border:1px solid #5b4b25;border-radius:8px}
+input.txt:focus{outline:0;border-color:#f0d78c;box-shadow:0 0 12px rgba(201,162,75,.5)}
+input.num{direction:ltr;text-align:right}
+input.bad{border-color:#e0664f}
+.err{display:block;min-height:18px;font-size:13px;color:#ff9d8a}
+#chosen{color:#f0d78c;font-weight:600}
+#overlay{display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.85);z-index:99;overflow:auto}
+#resBox{width:90%;max-width:560px;margin:60px auto;padding:26px;background:#14110a;border:1px solid #c9a24b;border-radius:14px}
+.tot{font-size:20px;color:#f0d78c;font-weight:700}
+#footer{text-align:center;padding:22px;margin-top:40px;border-top:1px solid #c9a24b;color:#a8996f;font-size:14px}
