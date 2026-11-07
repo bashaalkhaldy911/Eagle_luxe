@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Eagle Luxe - السيارات</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+<div id="header">
+<div class="brand"><span class="logo">Eagle Luxe</span><span class="slogan">عالم الرفاهية</span></div>
+<div id="nav"><a class="go" href="home.html">الرئيسية</a><a class="go cur" href="cars.html">السيارات</a><a class="go" href="AboutUs.html">من نحن</a><a id="exitLink" href="home.html">خروج</a></div>
+</div>
+<div class="hero">
+<h1>اختر سيارتك الفاخرة</h1>
+<p>أسطول النخبة ... ألوان ملكية وتجارب استثنائية</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>السيارات المتوفرة</h2>
+<div class="scroll">
+<table>
+<thead><tr><th>الرمز</th><th>الصورة</th><th>الموديل</th><th>سنة الصنع</th><th>السعر اليومي</th><th>إظهار التفاصيل</th><th>اختيار</th></tr></thead>
+<tbody>
+<!-- المجموعة الأولى (5 سيارات فاخرة خارقة) -->
+<tr class="car fleet-group-1">
+  <td>CR-001</td>
+  <td><img class="thumb" src="images/car1.jpg" alt="Bugatti Chiron Super Sport" /></td>
+  <td class="model">Bugatti Chiron Super Sport</td>
+  <td>2024</td>
+  <td class="price">2500000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d1" /></td>
+  <td><input type="checkbox" class="sel" id="s1" /></td>
+</tr>
+<tr class="drow fleet-group-1"><td colspan="7"><div class="dbox"><img src="images/car1.jpg" alt="Bugatti Chiron Super Sport" /><ul><li>نوع الوقود: بنزين (W16 Quad-Turbo)</li><li>ناقل الحركة: أوتوماتيك 7 سرعات ثنائي التعشيق</li><li>عدد المقاعد: مقعدين رياضيين</li><li>اللون: أسود كربون مع خطوط برتقالية رياضية</li><li>المميزات: سرعة قصوى 440 كم/س، مقصورة كربون وألومنيوم</li></ul></div></td></tr>
+
+<tr class="car fleet-group-1">
+  <td>CR-002</td>
+  <td><img class="thumb" src="images/car2.jpg" alt="Porsche Panamera Turbo" /></td>
+  <td class="model">Porsche Panamera Turbo</td>
+  <td>2023</td>
+  <td class="price">1400000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d2" /></td>
+  <td><input type="checkbox" class="sel" id="s2" /></td>
+</tr>
+<tr class="drow fleet-group-1"><td colspan="7"><div class="dbox"><img src="images/car2.jpg" alt="Porsche Panamera Turbo" /><ul><li>نوع الوقود: بنزين V8 Twin-Turbo</li><li>ناقل الحركة: أوتوماتيك PDK 8 سرعات</li><li>عدد المقاعد: 4 مقاعد</li><li>اللون: خمري ملكي داكن (العناب الميتاليك)</li><li>المميزات: جناح خلفي ديناميكي، نظام تعليق هوائي متكيف</li></ul></div></td></tr>
+
+<tr class="car fleet-group-1">
+  <td>CR-003</td>
+  <td><img class="thumb" src="images/car3.jpg" alt="Lamborghini Sian FKP 37" /></td>
+  <td class="model">Lamborghini Sian FKP 37</td>
+  <td>2024</td>
+  <td class="price">2300000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d3" /></td>
+  <td><input type="checkbox" class="sel" id="s3" /></td>
+</tr>
+<tr class="drow fleet-group-1"><td colspan="7"><div class="dbox"><img src="images/car3.jpg" alt="Lamborghini Sian FKP 37" /><ul><li>نوع الوقود: هجين بنزين V12 ومكثف فائق</li><li>ناقل الحركة: أوتوماتيك 7 سرعات ISR</li><li>عدد المقاعد: مقعدين</li><li>اللون: برونزي ميتاليك ملكي</li><li>المميزات: تقنية المكثفات الفائقة، أبواب مقصية تتحرك للأعلى</li></ul></div></td></tr>
+
+<tr class="car fleet-group-1">
+  <td>CR-004</td>
+  <td><img class="thumb" src="images/car4.jpg" alt="Ferrari F8 Tributo" /></td>
+  <td class="model">Ferrari F8 Tributo</td>
+  <td>2024</td>
+  <td class="price">2200000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d4" /></td>
+  <td><input type="checkbox" class="sel" id="s4" /></td>
+</tr>
+<tr class="drow fleet-group-1"><td colspan="7"><div class="dbox"><img src="images/car4.jpg" alt="Ferrari F8 Tributo" /><ul><li>نوع الوقود: بنزين V8 Twin-Turbo</li><li>ناقل الحركة: F1 مزدوج التعشيق 7 سرعات</li><li>عدد المقاعد: مقعدين</li><li>اللون: أحمر فيراري داكن (Rosso Corsa)</li><li>المميزات: تسارع من 0 إلى 100 كم/س خلال 2.9 ثانية</li></ul></div></td></tr>
+
+<tr class="car fleet-group-1">
+  <td>CR-005</td>
+  <td><img class="thumb" src="images/car5.jpg" alt="Range Rover Sport" /></td>
+  <td class="model">Range Rover Sport</td>
+  <td>2024</td>
+  <td class="price">1350000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d5" /></td>
+  <td><input type="checkbox" class="sel" id="s5" /></td>
+</tr>
+<tr class="drow fleet-group-1"><td colspan="7"><div class="dbox"><img src="images/car5.jpg" alt="Range Rover Sport" /><ul><li>نوع الوقود: بنزين Twin-Turbo V8</li><li>ناقل الحركة: أوتوماتيك 8 سرعات دفع رباعي</li><li>عدد المقاعد: 5 مقاعد</li><li>اللون: أسود ملكي ميتاليك بالكامل</li><li>المميزات: نظام دفع رباعي متقدم، عزل صوتي ونظام هيدروليكي</li></ul></div></td></tr>
+
+<!-- المجموعة الثانية (5 سيارات منوعة وعملية) -->
+<tr class="car fleet-group-2" style="display:none;">
+  <td>CR-006</td>
+  <td><img class="thumb" src="images/car6.jpg" alt="Toyota Corolla" /></td>
+  <td class="model">Toyota Corolla Sedan</td>
+  <td>2024</td>
+  <td class="price">450000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d6" /></td>
+  <td><input type="checkbox" class="sel" id="s6" /></td>
+</tr>
+<tr class="drow fleet-group-2" style="display:none;"><td colspan="7"><div class="dbox"><img src="images/car6.jpg" alt="Toyota Corolla" /><ul><li>نوع الوقود: بنزين (4-Cylinder)</li><li>ناقل الحركة: أوتوماتيك CVT</li><li>عدد المقاعد: 5 مقاعد</li><li>اللون: رمادي داكن ميتاليك</li><li>المميزات: اقتصادية جداً، شاشة ذكية مع دعم Carplay</li></ul></div></td></tr>
+
+<tr class="car fleet-group-2" style="display:none;">
+  <td>CR-007</td>
+  <td><img class="thumb" src="images/car7.jpg" alt="Rolls-Royce Ghost" /></td>
+  <td class="model">Rolls-Royce Ghost</td>
+  <td>2024</td>
+  <td class="price">1800000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d7" /></td>
+  <td><input type="checkbox" class="sel" id="s7" /></td>
+</tr>
+<tr class="drow fleet-group-2" style="display:none;"><td colspan="7"><div class="dbox"><img src="images/car7.jpg" alt="Rolls-Royce Ghost" /><ul><li>نوع الوقود: بنزين V12 Twin-Turbo</li><li>ناقل الحركة: أوتوماتيك 8 سرعات موجه بالأقمار الصناعية</li><li>عدد المقاعد: 5 مقاعد</li><li>اللون: أسود مخملي فاخر مع خطوط ذهبية</li><li>المميزات: سقف النجوم المضيء، أبواب تدليك كهربائية</li></ul></div></td></tr>
+
+<tr class="car fleet-group-2" style="display:none;">
+  <td>CR-008</td>
+  <td><img class="thumb" src="images/car8.jpg" alt="Kia Sportage" /></td>
+  <td class="model">Kia Sportage SUV</td>
+  <td>2024</td>
+  <td class="price">600000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d8" /></td>
+  <td><input type="checkbox" class="sel" id="s8" /></td>
+</tr>
+<tr class="drow fleet-group-2" style="display:none;"><td colspan="7"><div class="dbox"><img src="images/car8.jpg" alt="Kia Sportage" /><ul><li>نوع الوقود: بنزين 1.6L Turbo</li><li>ناقل الحركة: أوتوماتيك 7 سرعات مزدوج التعشيق</li><li>عدد المقاعد: 5 مقاعد</li><li>اللون: أبيض لؤلؤي ملكي</li><li>المميزات: سقف بانورامي، شاشة منحنية ثلاثية الأبعاد</li></ul></div></td></tr>
+
+<tr class="car fleet-group-2" style="display:none;">
+  <td>CR-009</td>
+  <td><img class="thumb" src="images/car9.jpg" alt="Hyundai Elantra" /></td>
+  <td class="model">Hyundai Elantra Sedan</td>
+  <td>2024</td>
+  <td class="price">500000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d9" /></td>
+  <td><input type="checkbox" class="sel" id="s9" /></td>
+</tr>
+<tr class="drow fleet-group-2" style="display:none;"><td colspan="7"><div class="dbox"><img src="images/car9.jpg" alt="Hyundai Elantra" /><ul><li>نوع الوقود: بنزين 2.0L Smartstream</li><li>ناقل الحركة: أوتوماتيك IVT</li><li>عدد المقاعد: 5 مقاعد</li><li>اللون: أزرق بحري عميق (Midnight Blue)</li><li>المميزات: تصميم ديناميكي حديث، إضاءة محيطية داخلية</li></ul></div></td></tr>
+
+<tr class="car fleet-group-2" style="display:none;">
+  <td>CR-010</td>
+  <td><img class="thumb" src="images/car10.jpg" alt="Chevrolet Spark" /></td>
+  <td class="model">Chevrolet Spark / Beat</td>
+  <td>2023</td>
+  <td class="price">350000 ل.س</td>
+  <td><input type="checkbox" class="det" id="d10" /></td>
+  <td><input type="checkbox" class="sel" id="s10" /></td>
+</tr>
+<tr class="drow fleet-group-2" style="display:none;"><td colspan="7"><div class="dbox"><img src="images/car10.jpg" alt="Chevrolet Spark" /><ul><li>نوع الوقود: بنزين 1.4L Ecotec</li><li>ناقل الحركة: أوتوماتيك CVT</li><li>عدد المقاعد: 4 مقاعد</li><li>اللون: فضي بلاتيني فاخر</li><li>المميزات: حجم مدمج وسهولة التوقف، استهلاك اقتصادي جداً</li></ul></div></td></tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center; margin-top: 25px;">
+  <button type="button" class="btn" id="toggleFleetBtn">إظهار المزيد من الخيارات</button>
+</p>
+<span class="msg" id="selMsg"></span>
+</div>
+
+<!-- زر المتابعة العائم في أسفل الشاشة -->
+<div class="floating-container">
+  <span>تم اختيار السيارات؟</span>
+  <button type="button" class="btn" id="goBtn">متابعة إلى الحجز</button>
+</div>
+
+<div id="bookingSec">
+<div class="card">
+<h2>نموذج الحجز</h2>
+<p>السيارات المختارة: <span id="chosen"></span></p>
+<form id="bookForm" action="cars.html" method="get">
+<fieldset>
+<legend>بيانات مقدم الطلب</legend>
+<p><label for="fname">الاسم الكامل (أحرف عربية)</label><input type="text" class="txt" id="fname" name="fname" /><span class="err" id="e_fname"></span></p>
+<p><label for="nid">الرقم الوطني (11 رقمًا) *</label><input type="text" class="txt num" id="nid" name="nid" maxlength="11" /><span class="err" id="e_nid"></span></p>
+<p><label for="sdate">تاريخ بداية التأجير (yyyy-mm-dd) *</label><input type="text" class="txt num" id="sdate" name="sdate" maxlength="10" /><span class="err" id="e_sdate"></span></p>
+<p><label for="edate">تاريخ نهاية التأجير (yyyy-mm-dd) *</label><input type="text" class="txt num" id="edate" name="edate" maxlength="10" /><span class="err" id="e_edate"></span></p>
+<p><label for="mobile">رقم الموبايل (Syriatel / MTN)</label><input type="text" class="txt num" id="mobile" name="mobile" maxlength="10" /><span class="err" id="e_mobile"></span></p>
+<p><label for="email">البريد الإلكتروني</label><input type="text" class="txt num" id="email" name="email" /><span class="err" id="e_email"></span></p>
+<p><button type="submit" class="btn">إرسال الطلب</button></p>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<div id="overlay"><div id="resBox"><h2>نتيجة الحجز</h2><div id="resBody"></div><p><button type="button" class="btn" id="closeRes">إغلاق</button></p></div></div>
+<div id="footer">Eagle Luxe - وجهتك الأفضل لاختيار سيارتك | F25_Assignment</div>
+</body>
+</html>
